@@ -1,0 +1,25 @@
+﻿<!--<h1>Productos</h1>
+<ul *ngIf="listProducts">
+  <li *ngFor="let product of listProducts">
+    {{product.nombre}}
+  </li>
+</ul>-->
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>#</strong></th>
+      <th><strong>Nombre del libro</strong></th>
+      <th><strong>Descripción</strong></th>
+      <th><strong>Precio</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of listProducts">
+      <td>{{product.id}}</td>
+      <td class="text-primary"><strong>{{product.nombre}}</strong></td>
+      <td>{{product.descripcion}}</td>
+      <td class="text-success"><strong>${{product.precio}}</strong></td>
+    </tr>
+  </tbody>
+</table>

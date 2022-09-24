@@ -1,0 +1,28 @@
+﻿<div class="container">
+  <h3>Alta de cliente</h3>
+
+  <div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label">Nombre: </label>
+    <div class="col-sm-10">
+      <input id="name" class="form-control" placeholder="Nombre" value="{{nameQueryString}}">
+    </div>
+  </div>
+  <br/>
+  <div class="form-group row">
+    <label for="email" class="col-sm-2 col-form-label">Nombre: </label>
+    <div class="col-sm-10">
+      <input id="email" class="form-control" type="email" placeholder="Email" value="{{emailQueryString}}">
+    </div>
+  </div>
+  <br/>
+  <div class="form-group row">
+    <label for="password" class="col-sm-2 col-form-label">Nombre: </label>
+    <div class="col-sm-10">
+      <input id="password" class="form-control" type="password" placeholder="Contraseña">
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <button class="btn btn-primary" (click)="createClient()">Guardar cliente</button>
+  </div>
+</div>
